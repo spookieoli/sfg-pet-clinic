@@ -1,6 +1,6 @@
 package de.jivy.sfgpetclinic.model;
 
-public class Person {
+public class Person extends BaseEntity {
 
     // Elements
     private String firstName;
