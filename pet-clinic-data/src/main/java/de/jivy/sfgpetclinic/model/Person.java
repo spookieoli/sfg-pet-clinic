@@ -1,3 +1,5 @@
+package de.jivy.sfgpetclinic.model;
+
 public class Person {
 
     // Elements
