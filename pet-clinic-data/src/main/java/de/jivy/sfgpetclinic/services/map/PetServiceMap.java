@@ -1,11 +1,11 @@
 package de.jivy.sfgpetclinic.services.map;
 
 import de.jivy.sfgpetclinic.model.Pet;
-import de.jivy.sfgpetclinic.services.CrudService;
+import de.jivy.sfgpetclinic.services.PetService;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
         return super.findAll();

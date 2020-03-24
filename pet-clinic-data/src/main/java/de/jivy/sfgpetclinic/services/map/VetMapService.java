@@ -1,11 +1,11 @@
 package de.jivy.sfgpetclinic.services.map;
 
 import de.jivy.sfgpetclinic.model.Vet;
-import de.jivy.sfgpetclinic.services.CrudService;
+import de.jivy.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetMapService extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
@@ -29,5 +29,10 @@ public class VetMapService extends AbstractMapService<Vet, Long> implements Crud
     @Override
     public Vet findById(Long id) {
         return super.findById(id);
+    }
+
+    @Override
+    public Vet findByLastName(String name) {
+        return null;
     }
 }
