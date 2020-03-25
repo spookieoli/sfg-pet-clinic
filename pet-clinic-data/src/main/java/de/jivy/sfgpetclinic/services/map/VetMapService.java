@@ -2,10 +2,13 @@ package de.jivy.sfgpetclinic.services.map;
 
 import de.jivy.sfgpetclinic.model.Vet;
 import de.jivy.sfgpetclinic.services.VetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class VetMapService extends AbstractMapService<Vet, Long> implements VetService {
+
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
