@@ -5,6 +5,26 @@
     <title>Owners List</title>
 </head>
 <body>
+<!--/*@thymesVar id="owner" type="de.jivy.sfgpetclinic.model.Owner"*/-->
     <h1 th:text="'Index Page'"></h1>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Id</th>
+            <th>Vorname</th>
+            <th>Nachname</th>
+        </tr>
+        </thead>
+        <tbody>
+            <!--/*@thymesVar id="owners" type="de.jivy.sfgpetclinic.model.Owner"*/-->
+            <tr th:each="owner : ${owners}">
+                <td th:text="${owner.id}"></td>
+                <td th:text="${owner.lastName}"></td>
+                <td th:text="${owner.firstName}"></td>
+            </tr>
+        </tbody>
+    </table>
+
 </body>
 </html>
