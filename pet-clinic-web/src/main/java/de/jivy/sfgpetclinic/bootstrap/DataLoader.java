@@ -23,12 +23,10 @@ public class DataLoader implements CommandLineRunner {
         // Set Owner
         System.out.println("Lade default Besitzer");
         Owner owner = new Owner();
-        owner.setId(1L);
         owner.setFirstName("Oliver");
         owner.setLastName("Sharif Mohammadi");
 
         Owner owner2 = new Owner();
-        owner2.setId(2L);
         owner2.setFirstName("Iryna");
         owner2.setLastName("Tsarova");
 
@@ -41,12 +39,10 @@ public class DataLoader implements CommandLineRunner {
         // Set Vet
         System.out.println("Lade default Tierärzte");
         Vet vet = new Vet();
-        vet.setId(1L);
         vet.setFirstName("Sascha");
         vet.setLastName("Sharif Mohammadi");
 
         Vet vet2 = new Vet();
-        vet2.setId(1L);
         vet2.setFirstName("Fee");
         vet2.setLastName("Sharif Mohammadi");
 
